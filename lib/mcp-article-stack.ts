@@ -64,7 +64,7 @@ export class McpTestStack extends cdk.Stack {
       identitySources: [apigateway.IdentitySource.header('Authorization')],
     });
 
-    const addTwoNumers = api.root.addResource('add_two_number').addResource('mcp');
+    const addTwoNumers = api.root.addResource('add_two_numbers').addResource('mcp');
     addTwoNumers.addMethod('POST', new apigateway.LambdaIntegration(addTwoNumbersLambda), {
       authorizer: gatewayAuthorizer,
     });
