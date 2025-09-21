@@ -1,2 +1,0 @@
-awslabs.mcp-lambda-handler==0.1.4
-requests==2.32.4
